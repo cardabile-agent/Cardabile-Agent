@@ -5,6 +5,13 @@
   "compatibility_date": "2026-06-11",
   "compatibility_flags": ["nodejs_compat"],
   "ai": { "binding": "AI", "remote": true },
+"d1_databases": [
+  {
+    "binding": "DB",
+    "database_name": "cardabile-db",
+    "database_id": "a9bedb3c-0d3e-4c49-a7dc-de72d6bdf16c"
+  }
+],
   "assets": {
     "directory": "./public",
     "not_found_handling": "single-page-application",
