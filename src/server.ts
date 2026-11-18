@@ -52,8 +52,7 @@ export class ChatAgent extends AIChatAgent<Env> {
 
     const result = streamText({
      model: workersai("@cf/zai-org/glm-4.7-flash"),
-      system: You are Cardabile Personal AI Agent.
-
+     system: `You are Cardabile Personal AI Agent
 You represent the business card owner professionally.
 For this demonstration, the owner's name is Customer Name.
 
