@@ -30,5 +30,25 @@
       "new_sqlite_classes": ["ChatAgent"],
       "tag": "v1"
     }
+  ],
+"previews": {
+  "ai": {
+    "binding": "AI"
+  },
+  "unsafe": {
+    "bindings": [
+      {
+        "name": "ChatAgent",
+        "type": "durable_object_namespace",
+        "class_name": "ChatAgent",
+        "namespace_id": "2aea91679c734a15927d293ec95fd563"
+      }
+    ]
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_id": "fa52b534-c2f2-4686-9bfb-15ef942abf42"
+    }
   ]
-}
+}}
