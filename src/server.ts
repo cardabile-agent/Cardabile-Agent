@@ -10,7 +10,7 @@ import {
   tool
 } from "ai";
 import { z } from "zod";
-
+import { handleCardabileBridge } from "./cardabile_bridge";
 export class ChatAgent extends AIChatAgent<Env> {
   maxPersistedMessages = 100;
   chatRecovery = true;
@@ -224,6 +224,8 @@ If the user asks to schedule a task, use the schedule tool to schedule the task.
 
 export default {
   async fetch(request: Request, env: Env) {
+   const bridge = await handleCardabileBridge(request, env);
+if (bridge) return bridge; 
     return (
       (await routeAgentRequest(request, env)) ||
       new Response("Not found", { status: 404 })
